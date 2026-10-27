@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "u": 0.001,
+    "lam": 1.0,
+    "T": 0.1,
+    "c": 10000.0,
+    "alpha": 0.95,
+    "beta": 10.0
+  },
+  "samples": 2000000,
+  "seed": 20261110,
+  "mean": 4.271856833779583e-13,
+  "standard_error": 1.8270223209387903e-16,
+  "normal_95_lower": 4.2682758700305426e-13,
+  "normal_95_upper": 4.275437797528623e-13,
+  "relative_standard_error": 0.0004276880972441925,
+  "count_histogram": {
+    "2": 1902004,
+    "3": 94730,
+    "4": 3170,
+    "5": 95,
+    "6": 1
+  },
+  "negative_numerical_gaps": 0,
+  "minimum_numerical_gap": 0.0,
+  "arithmetic": "Decimal conditional volumes",
+  "precision": 80
+}

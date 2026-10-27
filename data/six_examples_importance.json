@@ -1,0 +1,186 @@
+[
+  {
+    "parameters": {
+      "u": 0.001,
+      "lam": 1.0,
+      "T": 0.1,
+      "c": 10000.0,
+      "alpha": 0.95,
+      "beta": 10.0
+    },
+    "samples": 500000,
+    "seed": 20261101,
+    "mean": 4.2748396219632836e-13,
+    "standard_error": 3.6528726193792636e-16,
+    "normal_95_lower": 4.2676799916293004e-13,
+    "normal_95_upper": 4.281999252297267e-13,
+    "relative_standard_error": 0.0008545051843843506,
+    "count_histogram": {
+      "2": 475304,
+      "3": 23912,
+      "4": 760,
+      "5": 24
+    },
+    "negative_numerical_gaps": 0,
+    "minimum_numerical_gap": 0.0,
+    "arithmetic": "Decimal conditional volumes",
+    "precision": 80
+  },
+  {
+    "parameters": {
+      "u": 0.001,
+      "lam": 1.0,
+      "T": 1.0,
+      "c": 100000.0,
+      "alpha": 0.01,
+      "beta": 0.01
+    },
+    "samples": 500000,
+    "seed": 20261102,
+    "mean": 2.6673567511194243e-13,
+    "standard_error": 1.394501198851675e-15,
+    "normal_95_lower": 2.6400245276219314e-13,
+    "normal_95_upper": 2.694688974616917e-13,
+    "relative_standard_error": 0.005228026578246187,
+    "count_histogram": {
+      "2": 290448,
+      "3": 145825,
+      "4": 48560,
+      "5": 12343,
+      "6": 2359,
+      "7": 407,
+      "8": 49,
+      "9": 9
+    },
+    "negative_numerical_gaps": 0,
+    "minimum_numerical_gap": 0.0,
+    "arithmetic": "Decimal conditional volumes",
+    "precision": 80
+  },
+  {
+    "parameters": {
+      "u": 0.01,
+      "lam": 1.0,
+      "T": 1.0,
+      "c": 100000.0,
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    "samples": 500000,
+    "seed": 20261103,
+    "mean": 2.247413794883062e-12,
+    "standard_error": 1.2826979967022304e-14,
+    "normal_95_lower": 2.2222729141476986e-12,
+    "normal_95_upper": 2.2725546756184257e-12,
+    "relative_standard_error": 0.005707440256986462,
+    "count_histogram": {
+      "2": 290752,
+      "3": 146000,
+      "4": 48399,
+      "5": 11917,
+      "6": 2419,
+      "7": 451,
+      "8": 55,
+      "9": 5,
+      "10": 2
+    },
+    "negative_numerical_gaps": 0,
+    "minimum_numerical_gap": 0.0,
+    "arithmetic": "Decimal conditional volumes",
+    "precision": 80
+  },
+  {
+    "parameters": {
+      "u": 0.001,
+      "lam": 1.0,
+      "T": 1.0,
+      "c": 10000.0,
+      "alpha": 1.0,
+      "beta": 10.0
+    },
+    "samples": 500000,
+    "seed": 20261104,
+    "mean": 3.1277882031844674e-12,
+    "standard_error": 2.5689704641944814e-15,
+    "normal_95_lower": 3.1227530210746462e-12,
+    "normal_95_upper": 3.1328233852942885e-12,
+    "relative_standard_error": 0.0008213377304700357,
+    "count_histogram": {
+      "2": 291104,
+      "3": 145359,
+      "4": 48552,
+      "5": 12131,
+      "6": 2366,
+      "7": 411,
+      "8": 67,
+      "9": 7,
+      "10": 3
+    },
+    "negative_numerical_gaps": 0,
+    "minimum_numerical_gap": 0.0,
+    "arithmetic": "Decimal conditional volumes",
+    "precision": 80
+  },
+  {
+    "parameters": {
+      "u": 0.1,
+      "lam": 1.0,
+      "T": 1.0,
+      "c": 10000.0,
+      "alpha": 0.1,
+      "beta": 10.0
+    },
+    "samples": 500000,
+    "seed": 20261105,
+    "mean": 1.0162397547346403e-09,
+    "standard_error": 2.4020861334207193e-12,
+    "normal_95_lower": 1.0115316659131356e-09,
+    "normal_95_upper": 1.020947843556145e-09,
+    "relative_standard_error": 0.002363700221556428,
+    "count_histogram": {
+      "2": 291150,
+      "3": 145148,
+      "4": 48674,
+      "5": 12077,
+      "6": 2466,
+      "7": 426,
+      "8": 54,
+      "9": 5
+    },
+    "negative_numerical_gaps": 0,
+    "minimum_numerical_gap": 0.0,
+    "arithmetic": "Decimal conditional volumes",
+    "precision": 80
+  },
+  {
+    "parameters": {
+      "u": 0.001,
+      "lam": 1.0,
+      "T": 1.0,
+      "c": 10000.0,
+      "alpha": 1.0011,
+      "beta": 10.0
+    },
+    "samples": 500000,
+    "seed": 20261106,
+    "mean": 3.134069777105505e-12,
+    "standard_error": 2.572524406665862e-15,
+    "normal_95_lower": 3.12902762926844e-12,
+    "normal_95_upper": 3.13911192494257e-12,
+    "relative_standard_error": 0.00082082550473453,
+    "count_histogram": {
+      "2": 290948,
+      "3": 145413,
+      "4": 48486,
+      "5": 12204,
+      "6": 2458,
+      "7": 410,
+      "8": 72,
+      "9": 9
+    },
+    "negative_numerical_gaps": 0,
+    "minimum_numerical_gap": 0.0,
+    "arithmetic": "Decimal conditional volumes",
+    "precision": 80
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "environment": {
+    "python": "3.10.18",
+    "numpy": "1.26.4",
+    "mpmath": "1.3.0",
+    "system": "Darwin",
+    "machine": "arm64",
+    "processor": "arm",
+    "processes": 1,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "runs": [
+    {
+      "label": "reserve 0.01",
+      "samples": 200000,
+      "seed": 20261027,
+      "seconds": 1.2905915421433747
+    },
+    {
+      "label": "reserve 0.001",
+      "samples": 200000,
+      "seed": 20261028,
+      "seconds": 1.2888969578780234
+    },
+    {
+      "label": "reserve 0.0001",
+      "samples": 200000,
+      "seed": 20261029,
+      "seconds": 1.28057708311826
+    },
+    {
+      "label": "Main example (Table 1)",
+      "samples": 500000,
+      "seed": 20261101,
+      "seconds": 3.2166438749991357
+    },
+    {
+      "label": "Alternative 1",
+      "samples": 500000,
+      "seed": 20261102,
+      "seconds": 2.2241084999404848
+    },
+    {
+      "label": "Alternative 2",
+      "samples": 500000,
+      "seed": 20261103,
+      "seconds": 2.1888690409250557
+    },
+    {
+      "label": "Alternative 3",
+      "samples": 500000,
+      "seed": 20261104,
+      "seconds": 11.20961487526074
+    },
+    {
+      "label": "Alternative 4",
+      "samples": 500000,
+      "seed": 20261105,
+      "seconds": 4.1815267079509795
+    },
+    {
+      "label": "Positive safety loading",
+      "samples": 500000,
+      "seed": 20261106,
+      "seconds": 11.508127249777317
+    },
+    {
+      "label": "independent main run",
+      "samples": 2000000,
+      "seed": 20261110,
+      "seconds": 13.31396329170093
+    }
+  ],
+  "certify_six_seconds": 0.12836754089221358,
+  "total_regeneration_seconds": 52.26402712473646
+}

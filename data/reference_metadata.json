@@ -1,0 +1,180 @@
+[
+  {
+    "doi": "10.1016/S0167-6687(99)00055-4",
+    "title": [
+      "Homogeneous risk models with equalized claim amounts"
+    ],
+    "authors": [
+      "De Vylder",
+      "Goovaerts"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          5
+        ]
+      ]
+    },
+    "volume": "26",
+    "page": "223-238",
+    "article_number": null,
+    "type": "journal-article"
+  },
+  {
+    "doi": "10.3390/math11061501",
+    "title": [
+      "On the Devylder\u2013Goovaerts Conjecture in Ruin Theory"
+    ],
+    "authors": [
+      "Loisel",
+      "Minier"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          20
+        ]
+      ]
+    },
+    "volume": "11",
+    "page": "1501",
+    "article_number": null,
+    "type": "journal-article"
+  },
+  {
+    "doi": "10.1016/j.insmatheco.2021.07.007",
+    "title": [
+      "De Vylder and Goovaerts' conjecture on homogeneous risk models with equalized claim amounts"
+    ],
+    "authors": [
+      "Kim",
+      "Kim",
+      "Kim"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          11
+        ]
+      ]
+    },
+    "volume": "101",
+    "page": "186-201",
+    "article_number": null,
+    "type": "journal-article"
+  },
+  {
+    "doi": "10.1016/j.insmatheco.2025.103205",
+    "title": [
+      "A complete proof of the De Vylder and Goovaerts conjecture for homogeneous risk models"
+    ],
+    "authors": [
+      "Kim",
+      "Kim",
+      "Kim"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "volume": "127",
+    "page": "103205",
+    "article_number": "103205",
+    "type": "journal-article"
+  },
+  {
+    "doi": "10.1016/j.insmatheco.2011.08.005",
+    "title": [
+      "A new look at the homogeneous risk model"
+    ],
+    "authors": [
+      "Lef\u00e8vre",
+      "Picard"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          11
+        ]
+      ]
+    },
+    "volume": "49",
+    "page": "512-519",
+    "article_number": null,
+    "type": "journal-article"
+  },
+  {
+    "doi": "10.1239/jap/1409932679",
+    "title": [
+      "On the De Vylder and Goovaerts Conjecture About Ruin for Equalized Claims"
+    ],
+    "authors": [
+      "Robert"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          9
+        ]
+      ]
+    },
+    "volume": "51",
+    "page": "874-879",
+    "article_number": null,
+    "type": "journal-article"
+  },
+  {
+    "doi": "10.1017/jpr.2019.33",
+    "title": [
+      "The De Vylder\u2013Goovaerts conjecture holds within the diffusion limit"
+    ],
+    "authors": [
+      "Ankirchner",
+      "Blanchet-Scalliet",
+      "Kazi-Tani"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "volume": "56",
+    "page": "546-557",
+    "article_number": null,
+    "type": "journal-article"
+  },
+  {
+    "doi": "10.1007/978-0-387-69033-9",
+    "title": [
+      "Stochastic Simulation: Algorithms and Analysis"
+    ],
+    "authors": [
+      "Asmussen",
+      "Glynn"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "volume": null,
+    "page": null,
+    "article_number": null,
+    "type": "book"
+  }
+]

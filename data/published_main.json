@@ -1,0 +1,9 @@
+{
+  "source_doi": "10.3390/math11061501",
+  "source_location": "Table 1, first row; printed page 4",
+  "estimate": -2.46014e-08,
+  "reported_half_width": 2.66903e-09,
+  "trials": 100000000000000,
+  "reported_cores": 192,
+  "reported_minutes": 640
+}
