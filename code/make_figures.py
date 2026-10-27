@@ -54,7 +54,7 @@ for rho, color, marker in [(.5, BLUE, 'o'), (1, INK, 's'), (2, GRAY, '^')]:
 axes[0].axhline(1, ls='--', lw=.8, color=INK, zorder=0)
 axes[0].set(xlabel='Initial reserve $u$', ylabel='Gap / leading term',
             ylim=(.80, 1.035), title='(a) Continuous lower tails')
-axes[0].legend(loc='lower left')
+axes[0].legend(loc='lower right')
 atom = sorted(records['zero_atom_poisson'], key=lambda r: float(r['u']))
 u = np.array([float(r['u']) for r in atom])
 lead = float(atom[0]['linear_coefficient'])
@@ -64,31 +64,9 @@ axes[1].loglog(u, [float(r['gap']) for r in atom], 'o', color=BLUE, ms=4,
                label='Direct Poisson sum')
 axes[1].set(xlabel='Initial reserve $u$', ylabel='Equalization gap',
             title='(b) A mass at zero')
-axes[1].legend(loc='upper left')
+axes[1].legend(loc='upper right')
 for ax in axes:
+    ax.invert_xaxis()
     clean_log_x(ax)
 save(fig, 'lower_tail_orders')
-
-fig, axes = plt.subplots(1, 2, figsize=(6.3, 2.8), layout='constrained')
-published = json.loads((ROOT/'data/published_main.json').read_text())
-corrected = json.loads((ROOT/'data/six_examples_importance.json').read_text())[0]
-bound = json.loads((ROOT/'data/certified_bounds.json').read_text())[0]
-axes[0].axvline(0,color=GRAY,lw=.8,ls='--',zorder=0)
-axes[0].errorbar(published['estimate']/1e-8,1,xerr=published['reported_half_width']/1e-8,
-                 fmt='o',color=INK,capsize=4,ms=4)
-axes[0].errorbar(corrected['mean']/1e-8,0,xerr=1.96*corrected['standard_error']/1e-8,
-                 fmt='o',color=BLUE,capsize=4,ms=4)
-axes[0].set(yticks=[0,1],yticklabels=['Corrected','Published'],ylim=(-.5,1.5),
-            xlim=(-3.1,.45),xlabel=r'Gap $\Delta$ ($10^{-8}$ units)',title='(a) The reported sign')
-axes[0].tick_params(axis='y',length=0)
-lo,hi = float(bound['delta_lower'])/1e-13,float(bound['delta_upper'])/1e-13
-axes[1].axvline(0,color=GRAY,lw=.8,ls='--',zorder=0)
-axes[1].hlines(0,lo,hi,color=GRAY,lw=2.5)
-axes[1].vlines([lo,hi],-.08,.08,color=GRAY,lw=.9)
-axes[1].errorbar(corrected['mean']/1e-13,1,xerr=1.96*corrected['standard_error']/1e-13,
-                 fmt='o',color=BLUE,capsize=4,ms=4)
-axes[1].set(yticks=[0,1],yticklabels=['Analytic bound','Sampling'],ylim=(-.5,1.5),
-            xlim=(-.2,5),xlabel=r'Gap $\Delta$ ($10^{-13}$ units)',title='(b) The positive gap')
-axes[1].tick_params(axis='y',length=0)
-save(fig,'counterexample_correction')
-print('Rendered two figures as PDF, SVG and 600 dpi PNG.')
+print('Rendered the local-asymptotic figure as PDF, SVG and 600 dpi PNG.')
