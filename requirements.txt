@@ -1,0 +1,4 @@
+# Recorded environment: Python 3.10.18.
+numpy==1.26.4
+mpmath==1.3.0
+matplotlib==3.10.0
