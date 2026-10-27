@@ -39,7 +39,7 @@ python code/certify_bounds.py --precision 80 --cutoff 60
 - `test_numerics.py`: independent mathematical and failure-mode tests using standard `unittest`.
 - `verify_local_gap.py`: determinant, quadrature, atom and convolution benchmarks.
 - `data/`: fixed seeds, sample counts, estimates, sampling errors, bound endpoints, arithmetic precision and descriptive serial timings.
-- `figures/`: two vector SVG figures; the script also exports PDF and 600 dpi PNG.
+- `figures/`: one two-panel vector SVG figure of the local laws, with reserve decreasing from left to right. The script also exports PDF and 600 dpi PNG.
 
 ## Scope and limits
 
