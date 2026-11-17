@@ -6,6 +6,7 @@ import math
 import mpmath as mp
 import numpy as np
 
+from paired_benchmark import ordinary_paired
 from reproduce_bounds import CASES, calculate, self_check
 from verify_local_gap import (
     check_subset_recursion, power_two_claim_checks, atom_poisson_checks,
@@ -33,6 +34,20 @@ def reproduce(old):
     new = importance_lomax(old['samples'], old['seed'], p['u'], p['lam'],
                            p['T'], p['c'], p['alpha'], p['beta'])
     check_record(new, old)
+
+
+def check_paired_benchmark():
+    benchmark = json.loads((DATA / 'paired_benchmark.json').read_text())
+    reference = benchmark['ordinary_paired']
+    run = ordinary_paired(reference['samples'], reference['seed'],
+                          **benchmark['parameters'])
+    for name in ('classical_only', 'equalized_only'):
+        if run[name] != reference[name]:
+            raise AssertionError((name, run[name], reference[name]))
+    for name in ('mean', 'standard_error'):
+        if not math.isclose(run[name], reference[name], rel_tol=1e-10, abs_tol=0):
+            raise AssertionError((name, run[name], reference[name]))
+    reproduce(benchmark['conditional_importance'])
 
 
 def main():
@@ -67,7 +82,9 @@ def main():
         if not (old['normal_95_upper'] < float(bound['delta_upper'])):
             raise AssertionError('Numerical verification failed')
     reproduce(json.loads((DATA / 'main_example_validation.json').read_text()))
+    check_paired_benchmark()
     print('All deterministic checks and ten retained Monte Carlo runs reproduced.')
+    print('Ordinary paired and weighted benchmark runs reproduced.')
     print('All six normal intervals lie inside the separate analytic enclosures.')
     print('Conditional kernels: Decimal, normally 80 digits; variates and summaries: binary64.')
 

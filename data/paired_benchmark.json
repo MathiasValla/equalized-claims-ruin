@@ -1,0 +1,68 @@
+{
+  "parameters": {
+    "u": 2.0,
+    "lam": 1.0,
+    "horizon": 1.0,
+    "premium": 10.0,
+    "alpha": 0.95,
+    "beta": 10.0
+  },
+  "environment": {
+    "python": "3.10.18",
+    "numpy": "1.26.4",
+    "machine": "arm64",
+    "platform": "macOS-15.2-arm64-arm-64bit"
+  },
+  "ordinary_paired": {
+    "samples": 4000000,
+    "seed": 2026111701,
+    "mean": 0.00120525,
+    "standard_error": 3.140182462259195e-05,
+    "classical_only": 10302,
+    "equalized_only": 5481,
+    "elapsed_seconds": 0.21495220763608813,
+    "normal_95_interval": [
+      0.0011437024237397197,
+      0.0012667975762602802
+    ]
+  },
+  "conditional_importance": {
+    "parameters": {
+      "u": 2.0,
+      "lam": 1.0,
+      "T": 1.0,
+      "c": 10.0,
+      "alpha": 0.95,
+      "beta": 10.0
+    },
+    "samples": 150000,
+    "seed": 2026111702,
+    "mean": 0.0011879012224772102,
+    "standard_error": 7.07151911760851e-06,
+    "normal_95_lower": 0.0011740410450066974,
+    "normal_95_upper": 0.001201761399947723,
+    "relative_standard_error": 0.005952952134237051,
+    "count_histogram": {
+      "2": 87354,
+      "3": 43587,
+      "4": 14553,
+      "5": 3678,
+      "6": 702,
+      "7": 111,
+      "8": 12,
+      "9": 3
+    },
+    "negative_numerical_gaps": 0,
+    "minimum_numerical_gap": 0.0,
+    "arithmetic": "Decimal conditional volumes",
+    "precision": 80,
+    "elapsed_seconds": 0.7927632918581367,
+    "normal_95_interval": [
+      0.0011740410450066974,
+      0.001201761399947723
+    ]
+  },
+  "se_of_difference": 3.218821169712174e-05,
+  "estimated_variance_ratio_per_observation": 525.8393230374544,
+  "estimated_time_ratio_at_equal_precision": 5.346661694746147
+}
