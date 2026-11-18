@@ -27,7 +27,7 @@ python code/plot_principal_decay.py
 python code/plot_revision_figures.py
 ```
 
-The plot scripts write PDF, SVG and 600 dpi PNG under `figures/`. Figure 1 draws a worked path with two claims. Figure 2 reads three independent weighted runs and the small-reserve coefficient from `data/checks.json`. Figure 3 reads the two gap estimates and their normal 95% intervals from `data/paired_benchmark.json`.
+The plot scripts write PDF, SVG and 600 dpi PNG under `figures/`. Figure 1 draws a worked path with two claims. Figure 2 reads three independent weighted runs and the small-reserve coefficient from `data/checks.json`. Its lower panel shows the estimates and 95% sampling intervals as percentage differences from the quadratic prediction. Figure 3 reads the two gap estimates and their normal 95% intervals from `data/paired_benchmark.json`.
 
 To rerun the paired benchmark and write a separate record, including fresh timings:
 
